@@ -2,8 +2,11 @@
 
 namespace ElectricityMeter {
 
-    Iskraemeco::Iskraemeco(const std::string& str_number, const std::string& str_phase)
-    {
+    std::ostream& operator<<(std::ostream& stream, const METER_TYPE& meter_type) {
+        return stream << (meter_type == METER_TYPE::SINGLE_PHASE ? "single-phase" : "three-phase");
+    }
+
+    Iskraemeco::Iskraemeco(const std::string& str_number, const std::string& str_phase) {
         name_ = str_number;
         number_ = ParseNomber(str_number);
         phase_ = ParsePhase(str_phase);
@@ -14,13 +17,13 @@ namespace ElectricityMeter {
         return std::stoi(str_number.substr(8));
     }
 
-    meter_type Iskraemeco::ParseType(const std::string& str_number) {
+    METER_TYPE Iskraemeco::ParseType(const std::string& str_number) {
         using namespace std::literals;
         if (str_number.find("ISK103"sv) != str_number.npos) {
-            return meter_type::three_phase;
+            return METER_TYPE::THREE_PHASE;
         }
         else if (str_number.find("ISK102"sv) != str_number.npos) {
-            return meter_type::single_phase;
+            return METER_TYPE::SINGLE_PHASE;
         }
     }
 

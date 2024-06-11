@@ -22,9 +22,11 @@
 #include <stdint.h>
 #include <stdexcept>
 #include <functional>
-#include "electricity_meter.h"
 #include <memory>
 #include <optional>
+#include <fstream>
+
+#include "electricity_meter.h"
 
 namespace MeterPhaseDeterminate {
 
@@ -84,10 +86,10 @@ namespace MeterPhaseDeterminate {
         void PrintMeterToSlope();
             
         // вывести сфазированные счётчики и коэффиценты k интерполяции
-        void PrintPasesToMeterToSlope();
+        void PrintPhasesToMeterToSlope(std::ofstream & out);
 
         // вывести сфазированные счётчики и коэффиценты b интерполяции
-        void PrintPasesToMeterToFreeRatio();
+        void PrintPhasesToMeterToFreeRatio(std::ofstream & out);
 
         // вывести несфазированные счётчики
         void PrintUnphasedMetersToSlope();
@@ -187,36 +189,34 @@ namespace MeterPhaseDeterminate {
     }
 
     template <typename MeterModel>
-    void VoltageData<MeterModel>::PrintPasesToMeterToSlope() {
+    void VoltageData<MeterModel>::PrintPhasesToMeterToSlope(std::ofstream & out) {
+        out << "phase_;meter_number;meter_phase;type;straights_ratios;\n";
         int i = 1;
         for (const auto& phase_to_meters_to_straights_ratios : phases_to_meters_to_straights_ratios_) {
             for (const auto& [meter, straights_ratios] : phase_to_meters_to_straights_ratios) {
-                std::cout << "phase_: " << i << ' ';
-                std::cout << meter.GetNumber() << " meter_phase: " << meter.GetPhase() << " type: " << meter.GetType() << " ";
+                out << i << ';' << meter.GetNumber() << ';' << meter.GetPhase() << ';' <<  meter.GetType() << ';';
                 for (const auto straight_ratio : straights_ratios) {
-                    std::cout << straight_ratio.k << " ";
+                    out << straight_ratio.k << ";";
                 }
-                std::cout << std::endl;
+                out << std::endl;
             }
             i++;
-            std::cout << std::endl;
         }
     }
 
     template <typename MeterModel>
-    void VoltageData<MeterModel>::PrintPasesToMeterToFreeRatio() {
+    void VoltageData<MeterModel>::PrintPhasesToMeterToFreeRatio(std::ofstream & out) {
+        out << "phase_;meter_number;meter_phase;type;straights_ratios;\n";
         int i = 1;
         for (const auto& phase_to_meters_to_straights_ratios : phases_to_meters_to_straights_ratios_) {
             for (const auto& [meter, straights_ratios] : phase_to_meters_to_straights_ratios) {
-                std::cout << "phase_: " << i << ' ';
-                std::cout << meter.GetNumber() << " meter_phase: " << meter.GetPhase() << " type: " << meter.GetType() << " ";
+                out << i << ';' << meter.GetNumber() << ';' << meter.GetPhase() << ';' <<  meter.GetType() << ';';
                 for (const auto straight_ratio : straights_ratios) {
-                    std::cout << straight_ratio.b << " ";
+                    out << straight_ratio.b << ";";
                 }
-                std::cout << std::endl;
+                out << std::endl;
             }
             i++;
-            std::cout << std::endl;
         }
     }
 

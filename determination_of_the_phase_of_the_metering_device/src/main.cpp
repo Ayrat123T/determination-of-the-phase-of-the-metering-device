@@ -1,5 +1,8 @@
-﻿#include "meters_data.h"
-#include <libpq-fe.h> /* libpq header file */ 
+﻿#include <libpq-fe.h> /* libpq header file */ 
+
+#include "meters_data.h"
+#include "input_reader.h"
+
 
 using namespace std;
 
@@ -41,13 +44,17 @@ void PhasingDataFromPostgreSQL(const char* conninfo) {
     }
     cout << "Insert complited!" << endl;
     voltage_data.Interpolation();
-    voltage_data.PrintPasesToMeterToFreeRatio();
+    ofstream outFreeRatio; // поток для записи
+    outFreeRatio.open("PhasesToMeterToFreeRatio.csv"); // открываем файл для записи
+    voltage_data.PrintPhasesToMeterToFreeRatio(outFreeRatio);
+    ofstream outSlope; // поток для записи
+    outSlope.open("PhasesToMeterToSlope.csv"); // открываем файл для записи
+    voltage_data.PrintPhasesToMeterToSlope(outSlope);
 
     PQfinish(conn);// закрыть подключение к базе данных и провести очистку
 }
 
-void ExportPhasingResultToPostgreSQL(PGconn* conn) {
-
+/*void ExportPhasingResultToPostgreSQL(PGconn* conn) {
     const char* name = "name";
     int num = 1;
     PGresult* res = PQexec(conn, "CREATE TABLE IF NOT EXISTS MetersToVoltages "
@@ -57,8 +64,7 @@ void ExportPhasingResultToPostgreSQL(PGconn* conn) {
 
     PQclear(res);
     PQfinish(conn);// закрыть подключение к базе данных и провести очистку
-    
-}
+}*/
 
 int main(int argc, char** argv)
 {

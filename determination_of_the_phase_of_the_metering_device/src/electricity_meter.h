@@ -4,9 +4,9 @@
 
 namespace ElectricityMeter {
     
-    enum meter_type { //тип счётчика
-        single_phase = 1,// однофазный
-        three_phase = 3 // трёхфазный
+    enum METER_TYPE { //тип счётчика
+        SINGLE_PHASE = 1,// однофазный
+        THREE_PHASE = 3 // трёхфазный
     };
 
     //счётчик
@@ -25,7 +25,7 @@ namespace ElectricityMeter {
 
         const int GetPhase() const;
 
-        const meter_type GetType() const;
+        const METER_TYPE GetType() const;
 
         ~Meter() = default;
 
@@ -39,13 +39,13 @@ namespace ElectricityMeter {
         std::string name_;//название счётчика
         int number_; //номер счётчика
         int phase_ = 1; //фаза счётчика
-        meter_type type_; //тип счётчика
+        METER_TYPE type_; //тип счётчика
 
     private:
 
         virtual int ParseNomber(const std::string& str_number) = 0;
 
-        virtual meter_type ParseType(const std::string& str_number) = 0;
+        virtual METER_TYPE ParseType(const std::string& str_number) = 0;
 
         virtual int ParsePhase(const std::string& str_phase) = 0;
     };
@@ -59,7 +59,7 @@ namespace ElectricityMeter {
 
         int ParseNomber(const std::string& str_number) override;
 
-        meter_type ParseType(const std::string& str_number) override;
+        METER_TYPE ParseType(const std::string& str_number) override;
 
         int ParsePhase(const std::string& str_phase) override;
 
@@ -105,7 +105,7 @@ namespace ElectricityMeter {
     }
 
     template <typename MeterModel>
-    const meter_type Meter<MeterModel>::GetType() const {
+    const METER_TYPE Meter<MeterModel>::GetType() const {
         return type_;
     }
 
@@ -120,16 +120,9 @@ namespace ElectricityMeter {
         return std::pair{ GetNumber(), GetPhase() } < std::pair{ other.GetNumber(), other.GetPhase() };
     }
 
-    /*template <typename MeterModel>
-    std::ostream& Meter<MeterModel>::operator<<(std::ostream& stream) const {
-        stream << "number: " << GetNumber() << " type: " << GetType() << " phase: " << GetPhase();
-        return stream;
-    }*/
-
     template <typename MeterModel>
     std::ostream& operator<<(std::ostream& stream, const Meter<MeterModel>& meter) {
-        stream << "number: " << meter.GetNumber() << " type: " << meter.GetType() << " phase: " << meter.GetPhase();
-        return stream;
+        return stream << "number: " << meter.GetNumber() << " type: " << meter.GetType() << " phase: " << meter.GetPhase();
     }
 
 } //namespace ElectricityMeter
