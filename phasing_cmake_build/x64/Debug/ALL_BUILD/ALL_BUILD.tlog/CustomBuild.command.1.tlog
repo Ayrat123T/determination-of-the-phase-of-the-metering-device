@@ -1,0 +1,10 @@
+^C:\USERS\AIRAT\SOURCE\REPOS\DETERMINATION-OF-THE-PHASE-OF-THE-METERING-DEVICE\DETERMINATION_OF_THE_PHASE_OF_THE_METERING_DEVICE\CMAKELISTS.TXT
+setlocal
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

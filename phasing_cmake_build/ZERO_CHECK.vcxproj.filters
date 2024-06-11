@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\phasing_cmake_build\CMakeFiles\0d117b94cb259f7ff39df8a07918de9f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1AA9098D-3F75-3C0D-A7AD-BDF9A129CFAE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

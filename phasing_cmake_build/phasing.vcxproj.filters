@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\electricity_meter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\meters_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\electricity_meter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6FD6601C-B622-33D7-9852-B4E274AFC939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B845E40-3D9A-33D3-9E79-48C417C36E37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
