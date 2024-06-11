@@ -28,7 +28,11 @@ void PhasingDataFromPostgreSQL(const char* conninfo) {
         exit(1);
     }
 
+    //PGresult* res = PQexec(conn, "SELECT * from data WHERE timestamp < '2022-12-15'");
     PGresult* res = PQexec(conn, "SELECT * from test"); // holds query result
+
+    /*int nFields = PQnfields(res);
+    PrintAttribDataFromPostgreSQL(nFields, res);*/
 
     MeterPhaseDeterminate::VoltageData<ElectricityMeter::Iskraemeco> voltage_data;
     for (int i = 0; i < PQntuples(res); ++i) {
@@ -42,7 +46,7 @@ void PhasingDataFromPostgreSQL(const char* conninfo) {
     PQfinish(conn);// закрыть подключение к базе данных и провести очистку
 }
 
-/*void ExportPhasingResultToPostgreSQL(PGconn* conn) {
+void ExportPhasingResultToPostgreSQL(PGconn* conn) {
 
     const char* name = "name";
     int num = 1;
@@ -54,7 +58,7 @@ void PhasingDataFromPostgreSQL(const char* conninfo) {
     PQclear(res);
     PQfinish(conn);// закрыть подключение к базе данных и провести очистку
     
-}*/
+}
 
 int main(int argc, char** argv)
 {
@@ -64,7 +68,7 @@ int main(int argc, char** argv)
     строку соединения; иначе принять по умолчанию dbname=postgres и использовать
     переменные среды или значения по умолчанию для всех других параметров соединения.*/
     if (argc > 1) conninfo = argv[1];
-    else conninfo = "dbname=unloading_from_meters user=postgresQLlogin password=adminPass hostaddr=127.0.0.1 port=5432";
+    else conninfo = "dbname=unloading_from_meters user=postgres password=admin hostaddr=127.0.0.1 port=5432";
     PhasingDataFromPostgreSQL(conninfo);
     return 0;
 }

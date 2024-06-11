@@ -9,17 +9,9 @@ set(HEAD_FILES ${SOURCE_DIR}/meters_data.h ${SOURCE_DIR}/electricity_meter.h)
 
 add_executable(${PROJECT_NAME} ${SOURCES_FILES} ${HEAD_FILES})
 
-#include_directories("C:/Program Files/PostgreSQL/15/lib")
-#include_directories("C:/Program Files/PostgreSQL/15/include")
-#target_include_directories(${PROJECT_NAME} PUBLIC C:/Program Files/PostgreSQL/15/include)
-#target_link_directories(${PROJECT_NAME} PUBLIC C:/Program Files/PostgreSQL/15/lib)
-#target_link_libraries(${PROJECT_NAME} PUBLIC libpq)
-
-
-
 target_link_libraries (${PROJECT_NAME} PRIVATE libpq)
 
-set(libpq_DIR "C:/Program Files/PostgreSQL/15")
+set(libpq_DIR "C:/Program Files/PostgreSQL/15") #каталог с установленной PostgreSQL
 set(libpq_LIB_DIR ${libpq_DIR}/lib)
 set(libpq_INCLUDE_DIR ${libpq_DIR}/include)
 add_library(libpq STATIC IMPORTED)
