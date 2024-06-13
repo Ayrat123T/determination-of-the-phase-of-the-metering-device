@@ -26,3 +26,9 @@ namespace MeterVoltageProfilesIO {
     }
 
 } //namespace MeterVoltageProfilesIO
+
+namespace detailMeterVoltageProfilesIO {
+
+    std::vector<std::string_view> SplitIntoWordsBySemicolon(std::string_view str);
+
+} //namespace detailMeterVoltageProfilesIO
