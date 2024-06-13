@@ -17,7 +17,12 @@ namespace MeterVoltageProfilesIO {
 
     template <typename MeterModel>
     void ReadFromCSV(std::ifstream & input, MeterPhaseDeterminate::VoltageData<ElectricityMeter::Meter<MeterModel>>& voltage_data) {
-        
+        std::string line;
+        if (in.is_open()) {
+            while (std::getline(in, line)) {
+                
+            }
+        }
     }
 
 } //namespace MeterVoltageProfilesIO
