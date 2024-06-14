@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.4.0+18d5aef85 for .NET Framework
-      Сборка начата 11.06.2024 16:26:50.
+      Сборка начата 14.06.2024 14:51:27.
       Проект "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\3.27.8\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
@@ -69,8 +69,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-asp27k"
-      binary: "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-asp27k"
+      source: "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-mn8mbv"
+      binary: "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-mn8mbv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -79,37 +79,37 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-asp27k'
+        Change Dir: 'C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-mn8mbv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fe361.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c9dbb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.4.0+18d5aef85 for .NET Framework
-        Сборка начата 11.06.2024 16:26:51.
-        Проект "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-asp27k\\cmTC_fe361.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 14.06.2024 14:51:28.
+        Проект "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-mn8mbv\\cmTC_c9dbb.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_fe361.dir\\Debug\\".
-          Создание каталога "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-asp27k\\Debug\\".
-          Создание каталога "cmTC_fe361.dir\\Debug\\cmTC_fe361.tlog\\".
+          Создание каталога "cmTC_c9dbb.dir\\Debug\\".
+          Создание каталога "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-mn8mbv\\Debug\\".
+          Создание каталога "cmTC_c9dbb.dir\\Debug\\cmTC_c9dbb.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_fe361.dir\\Debug\\cmTC_fe361.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_c9dbb.dir\\Debug\\cmTC_c9dbb.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe361.dir\\Debug\\\\" /Fd"cmTC_fe361.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\dev\\mingw64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c9dbb.dir\\Debug\\\\" /Fd"cmTC_c9dbb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\dev\\mingw64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31933 для x64
           CMakeCXXCompilerABI.cpp
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe361.dir\\Debug\\\\" /Fd"cmTC_fe361.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\dev\\mingw64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c9dbb.dir\\Debug\\\\" /Fd"cmTC_c9dbb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\dev\\mingw64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-asp27k\\Debug\\cmTC_fe361.exe" /INCREMENTAL /ILK:"cmTC_fe361.dir\\Debug\\cmTC_fe361.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-asp27k/Debug/cmTC_fe361.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-asp27k/Debug/cmTC_fe361.lib" /MACHINE:X64  /machine:x64 cmTC_fe361.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fe361.vcxproj -> C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-asp27k\\Debug\\cmTC_fe361.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-mn8mbv\\Debug\\cmTC_c9dbb.exe" /INCREMENTAL /ILK:"cmTC_c9dbb.dir\\Debug\\cmTC_c9dbb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-mn8mbv/Debug/cmTC_c9dbb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/CMakeScratch/TryCompile-mn8mbv/Debug/cmTC_c9dbb.lib" /MACHINE:X64  /machine:x64 cmTC_c9dbb.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_c9dbb.vcxproj -> C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-mn8mbv\\Debug\\cmTC_c9dbb.exe
         FinalizeBuildStatus:
-          Файл "cmTC_fe361.dir\\Debug\\cmTC_fe361.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_fe361.dir\\Debug\\cmTC_fe361.tlog\\cmTC_fe361.lastbuildstate".
-        Сборка проекта "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-asp27k\\cmTC_fe361.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_c9dbb.dir\\Debug\\cmTC_c9dbb.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_c9dbb.dir\\Debug\\cmTC_c9dbb.tlog\\cmTC_c9dbb.lastbuildstate".
+        Сборка проекта "C:\\Users\\airat\\source\\repos\\determination-of-the-phase-of-the-metering-device\\phasing_cmake_build\\CMakeFiles\\CMakeScratch\\TryCompile-mn8mbv\\cmTC_c9dbb.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.79
+        Прошло времени 00:00:00.74
         
       exitCode: 0
 ...

@@ -4,8 +4,8 @@ project(phasing CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCE_DIR src)
-set(SOURCES_FILES ${SOURCE_DIR}/main.cpp ${SOURCE_DIR}/electricity_meter.cpp)
-set(HEAD_FILES ${SOURCE_DIR}/meters_data.h ${SOURCE_DIR}/electricity_meter.h)
+set(SOURCES_FILES ${SOURCE_DIR}/main.cpp   ${SOURCE_DIR}/electricity_meter.cpp ${SOURCE_DIR}/input_reader.cpp)
+set(HEAD_FILES ${SOURCE_DIR}/meters_data.h ${SOURCE_DIR}/electricity_meter.h   ${SOURCE_DIR}/input_reader.h)
 
 add_executable(${PROJECT_NAME} ${SOURCES_FILES} ${HEAD_FILES})
 

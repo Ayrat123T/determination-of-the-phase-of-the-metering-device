@@ -7,12 +7,18 @@
     <ClCompile Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\electricity_meter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\input_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\meters_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\electricity_meter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\determination_of_the_phase_of_the_metering_device\src\input_reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

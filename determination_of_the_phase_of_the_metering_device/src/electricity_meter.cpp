@@ -25,6 +25,7 @@ namespace ElectricityMeter {
         else if (str_number.find("ISK102"sv) != str_number.npos) {
             return METER_TYPE::SINGLE_PHASE;
         }
+        return METER_TYPE::THREE_PHASE;
     }
 
     int Iskraemeco::ParsePhase(const std::string& str_phase) {
