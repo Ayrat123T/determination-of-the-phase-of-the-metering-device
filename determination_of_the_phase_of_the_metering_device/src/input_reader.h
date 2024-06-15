@@ -21,7 +21,7 @@ namespace MeterVoltageProfilesIO {
 
     //Сфазировать счётчики используя данные из PostgreSQL
     template <typename MeterModel>
-    void PhasingDataFromPostgreSQL(int argc, char** argv);
+    void PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo);
 
     //прочитать данные из PostgreSQL
     template <typename MeterModel>
@@ -41,14 +41,8 @@ namespace MeterVoltageProfilesIO {
 } //namespace MeterVoltageProfilesIO
 
 template <typename MeterModel>
-void MeterVoltageProfilesIO::PhasingDataFromPostgreSQL(int argc, char** argv) {
-    const char* conninfo;
-    /* Если пользователь передаёт параметр в командной строке, использовать его как
-    строку соединения; иначе принять по умолчанию dbname=postgres и использовать
-    переменные среды или значения по умолчанию для всех других параметров соединения.*/
-    if (argc > 1) conninfo = argv[1];
-    else conninfo = "dbname=unloading_from_meters user=postgres password=admin hostaddr=127.0.0.1 port=5432";
-    
+void MeterVoltageProfilesIO::PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo) {
+  
     PGconn* conn = PQconnectdb(conninfo); // Установить подключение к базе данных
     if (PQstatus(conn) != CONNECTION_OK) { // Убедиться, что соединение с сервером установлено успешно
         fprintf(stderr, "Connection to database failed: %s",
