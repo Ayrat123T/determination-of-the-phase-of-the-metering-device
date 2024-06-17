@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <filesystem>
-#include <libpq-fe.h> /* libpq header file */ 
+//#include <libpq-fe.h> /* libpq header file */ 
 
 #include "electricity_meter.h"
 #include "meters_data.h"
@@ -20,7 +20,7 @@ namespace detailMeterVoltageProfilesIO {
 namespace MeterVoltageProfilesIO { 
 
     //Сфазировать счётчики используя данные из PostgreSQL
-    template <typename MeterModel>
+    /*template <typename MeterModel>
     void PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo);
 
     //прочитать данные из PostgreSQL
@@ -28,7 +28,7 @@ namespace MeterVoltageProfilesIO {
     MeterPhaseDeterminate::VoltageData<MeterModel> ReadFromPostgreSQL(PGconn* conninfo);
 
     //напечатать данные из PostgreSQL
-    void PrintAttribDataFromPostgreSQL(int nFields, PGresult* res);
+    void PrintAttribDataFromPostgreSQL(int nFields, PGresult* res);*/
 
     //Сфазировать счётчики используя данные из CSV таблицы
     template <typename MeterModel>
@@ -40,7 +40,7 @@ namespace MeterVoltageProfilesIO {
 
 } //namespace MeterVoltageProfilesIO
 
-template <typename MeterModel>
+/*template <typename MeterModel>
 void MeterVoltageProfilesIO::PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo) {
   
     PGconn* conn = PQconnectdb(conninfo); // Установить подключение к базе данных
@@ -70,13 +70,13 @@ MeterPhaseDeterminate::VoltageData<MeterModel> MeterVoltageProfilesIO::ReadFromP
     PGresult* res = PQexec(conn, "SELECT * from test"); // holds query result
     /*int nFields = PQnfields(res);
     PrintAttribDataFromPostgreSQL(nFields, res);*/
-    for (int i = 0; i < PQntuples(res); ++i) {
+    /*for (int i = 0; i < PQntuples(res); ++i) {
         MeterModel meter(PQgetvalue(res, i, 0), PQgetvalue(res, i, 3));
         voltage_data.Insert(meter, PQgetvalue(res, i, 2));
     }
     std::cout << "Insert complited!" << std::endl;
     return voltage_data;
-}
+}*/
 
 /*void ExportPhasingResultToPostgreSQL(PGconn* conn) {
     const char* name = "name";

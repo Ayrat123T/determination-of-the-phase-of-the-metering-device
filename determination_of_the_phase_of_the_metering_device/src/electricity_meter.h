@@ -14,7 +14,7 @@ namespace ElectricityMeter {
     class Meter {
     public:
         
-        Meter<MeterModel>() = default;
+        //Meter<MeterModel>() = default;
 
         // печать номера, типа и фазы счётчика
         void PrintMeter();

@@ -16,7 +16,7 @@ std::vector<std::string> detailMeterVoltageProfilesIO::SplitIntoWordsBySemicolon
     return words;
 }
 
-void MeterVoltageProfilesIO::PrintAttribDataFromPostgreSQL(int nFields, PGresult* res) {
+/*void MeterVoltageProfilesIO::PrintAttribDataFromPostgreSQL(int nFields, PGresult* res) {
     for (int i = 0; i < nFields; i++) { // сначала напечатать имена атрибутов
         printf(PQfname(res, i));
         printf("\t");
@@ -29,4 +29,4 @@ void MeterVoltageProfilesIO::PrintAttribDataFromPostgreSQL(int nFields, PGresult
         }
         printf("\n");
     }
-}
+}*/
