@@ -1,0 +1,110 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ea6f7893d0af3142311c0308a7c73bafd96574bac2d2d3669d32dd3eb1d248c1
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e70ddde72a309068d49b411dcbe50c2cea90090abacf8bb063cb6b19db86904f
+Description: A compression library
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2023-12-31
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8abef33174a166e660188add3f3628a041c89bfb0c33487fa12530ab69bc5824
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6ed9c37ddac09170d28c0d05caf1dead4c72066c7ece6326a35a9be6f9eb19ec
+Status: install ok installed
+
+Package: openssl
+Version: 3.3.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 20306882bf127007e9a3eb91c62957af46272842c820ef1c608353a606e1bcf6
+Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: lz4
+Version: 1.10.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 84918f97d462e3ee6ee75466597357328892b4ce31605de2ad77156f3853383b
+Description: Lossless compression algorithm, providing compression speed at 400 MB/s per core.
+Status: install ok installed
+
+Package: vcpkg-tool-meson
+Version: 1.5.1
+Depends: vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c5064cf8432e03213d05e3833c80869e3da6d5bd2ecd00477b0def702733a839
+Description: Meson build system
+Status: install ok installed
+
+Package: pkgconf
+Version: 2.3.0
+Depends: vcpkg-tool-meson
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f50a42319b0a75cacaa177d1f47d6b9546e69fc8c38d763917aa1d958e762257
+Description: pkgconf is a program which helps to configure compiler and linker flags for development libraries. It is similar to pkg-config from freedesktop.org.
+Status: install ok installed
+
+Package: vcpkg-pkgconfig-get-modules
+Version: 2024-04-03
+Depends: pkgconf
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b5f8a6e0d06fd4d4fda055d3d325f586c0d67727f60116bc516aa55f538f0c69
+Status: install ok installed
+
+Package: libpq
+Version: 16.4
+Depends: vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fe5604d636ba249d21e28f1f8057618fb9683296bf0afa36873e6af6d1356053
+Description: The official database access API of postgresql
+Default-Features: lz4, openssl, zlib
+Status: install ok installed
+
+Package: libpq
+Feature: lz4
+Depends: lz4
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use lz4
+Status: install ok installed
+
+Package: libpq
+Feature: openssl
+Depends: openssl
+Architecture: x64-windows
+Multi-Arch: same
+Description: support for encrypted client connections and random number generation on platforms that do not have "/dev/urandom" (except windows)
+Status: install ok installed
+
+Package: libpq
+Feature: zlib
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use zlib
+Status: install ok installed
+

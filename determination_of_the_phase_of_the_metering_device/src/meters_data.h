@@ -77,7 +77,7 @@ namespace MeterPhaseDeterminate {
         void Interpolation();
 
         // вывести сырые значения напряжений
-        void PrintVoltage();
+        void PrintVoltage(std::ofstream& streamOut);
 
         // вывести размер вектора напряжений каждого счётчика
         void PrintSize();
@@ -92,7 +92,7 @@ namespace MeterPhaseDeterminate {
         void PrintPhasesToMeterToFreeRatio(std::ofstream & out);
 
         // вывести несфазированные счётчики
-        void PrintUnphasedMetersToSlope();
+        void PrintUnphasedMetersToSlope(std::ofstream & out);
 
         // выделение фидеров сфазированных счётчиков
         void AllocateFeeders();
@@ -154,18 +154,18 @@ namespace MeterPhaseDeterminate {
     }
 
     template <typename MeterModel>
-    void VoltageData<MeterModel>::PrintVoltage() {
+    void VoltageData<MeterModel>::PrintVoltage(std::ofstream& out) {
         for (const auto& [meter, voltages] : meters_to_voltage_) {
-            std::cout << meter.GetNumber() << " " << meter.GetPhase() << " ";
+            out << meter.GetNumber() << ';' << meter.GetPhase() << ';';
             bool is_first = true;
             for (const double voltage : voltages) {
                 if (!is_first) {
-                    std::cout << " ";
+                    out << ';';
                 }
-                std::cout << /*string(meter.number.size(), ' ') <<*/ voltage;
+                out << /*string(meter.number.size(), ' ') <<*/ voltage;
                 is_first = false;
             }
-            std::cout << ";" << std::endl;
+            out << ";\n";
         }
     }
 
@@ -221,13 +221,13 @@ namespace MeterPhaseDeterminate {
     }
 
     template <typename MeterModel>
-    void VoltageData<MeterModel>::PrintUnphasedMetersToSlope() {
+    void VoltageData<MeterModel>::PrintUnphasedMetersToSlope(std::ofstream & out) {
         for (const auto& [meter, straights_ratios] : unphased_meters_to_straights_ratios_) {
-            std::cout << meter.GetNumber() << " meter_phase: " << meter.GetPhase() << " type: " << meter.GetType() << " ";
+            out << meter.GetNumber() << " meter_phase: " << meter.GetPhase() << " type: " << meter.GetType() << ';';
             for (const auto straight_ratio : straights_ratios) {
-                std::cout << straight_ratio.k << " ";
+                out << straight_ratio.k << ';';
             }
-            std::cout << std::endl;
+            out << std::endl;
         }
     }
 
@@ -366,15 +366,15 @@ namespace MeterPhaseDeterminate {
 
                 }
             }
-            /*for (int j = 0; j < phases_to_meters_to_straights_ratios_[i].size(); j++) {
+            for (int j = 0; j < phases_to_meters_to_straights_ratios_[i].size(); j++) {
                 if (phases_to_meters_to_straights_ratios_[i][j].meter.GetType() = ElectricityMeter::meter_type::three_phase) {
                     int phase_A;
                     int phase_B;
                     int phase_C;
 
                 }
-            }*/
-        //}
+            }
+        }*/
     }
 
 } //namespace MeterPhaseDeterminate

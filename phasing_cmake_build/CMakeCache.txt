@@ -59,7 +59,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/phasing
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/determination_of_the_phase_of_the_metering_device
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/link.exe
@@ -94,7 +94,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=phasing
+CMAKE_PROJECT_NAME:STATIC=determination_of_the_phase_of_the_metering_device
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=rc
@@ -168,13 +168,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-phasing_BINARY_DIR:STATIC=C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build
+determination_of_the_phase_of_the_metering_device_BINARY_DIR:STATIC=C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build
 
 //Value Computed by CMake
-phasing_IS_TOP_LEVEL:STATIC=ON
+determination_of_the_phase_of_the_metering_device_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-phasing_SOURCE_DIR:STATIC=C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device
+determination_of_the_phase_of_the_metering_device_SOURCE_DIR:STATIC=C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device
 
 
 ########################

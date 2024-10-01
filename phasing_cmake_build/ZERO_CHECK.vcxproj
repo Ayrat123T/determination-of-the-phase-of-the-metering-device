@@ -113,7 +113,7 @@
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/phasing.sln
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/determination_of_the_phase_of_the_metering_device.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -127,7 +127,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/phasing.sln
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/determination_of_the_phase_of_the_metering_device.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -141,7 +141,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/phasing.sln
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/determination_of_the_phase_of_the_metering_device.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -155,7 +155,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/phasing.sln
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/determination_of_the_phase_of_the_metering_device.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

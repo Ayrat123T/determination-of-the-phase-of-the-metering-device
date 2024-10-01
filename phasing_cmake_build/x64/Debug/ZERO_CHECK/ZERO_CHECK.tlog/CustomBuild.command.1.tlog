@@ -1,6 +1,6 @@
 ^C:\USERS\AIRAT\SOURCE\REPOS\DETERMINATION-OF-THE-PHASE-OF-THE-METERING-DEVICE\PHASING_CMAKE_BUILD\CMAKEFILES\0D117B94CB259F7FF39DF8A07918DE9F\GENERATE.STAMP.RULE
 setlocal
-C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/phasing.sln
+C:\dev\mingw64\bin\cmake.exe -SC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device -BC:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/phasing_cmake_build/determination_of_the_phase_of_the_metering_device.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

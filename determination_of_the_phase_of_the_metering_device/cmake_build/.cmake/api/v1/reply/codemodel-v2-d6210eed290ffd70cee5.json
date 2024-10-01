@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "metering_device_phase_determination",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "metering_device_phase_determination::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metering_device_phase_determination-Debug-cc260edb73a65477bbd4.json",
+					"name" : "metering_device_phase_determination",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device/cmake_build",
+		"source" : "C:/Users/airat/source/repos/determination-of-the-phase-of-the-metering-device/determination_of_the_phase_of_the_metering_device"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

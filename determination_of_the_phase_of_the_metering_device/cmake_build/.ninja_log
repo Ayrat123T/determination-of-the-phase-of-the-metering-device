@@ -1,0 +1,9 @@
+# ninja log v5
+29	1137	7494914081668752	CMakeFiles/determination_of_the_phase_of_the_metering_device.dir/src/electricity_meter.cpp.obj	bf8096e47794c6c9
+3	3748	7494914107865925	CMakeFiles/determination_of_the_phase_of_the_metering_device.dir/src/main.cpp.obj	e2ecc611532e3d70
+35	2601	7494914096378680	CMakeFiles/determination_of_the_phase_of_the_metering_device.dir/src/input_reader.cpp.obj	adbfed896f00c058
+3748	5002	7494914109595420	determination_of_the_phase_of_the_metering_device.exe	923faff8a846d863
+5	1004	7494914875184142	CMakeFiles/metering_device_phase_determination.dir/src/electricity_meter.cpp.obj	d10e28e6c9124cc4
+7	2638	7494914891516287	CMakeFiles/metering_device_phase_determination.dir/src/input_reader.cpp.obj	a88d5f5b5f2ebe59
+2	4085	7494914905880090	CMakeFiles/metering_device_phase_determination.dir/src/main.cpp.obj	d8d6c2f868767fba
+4086	4994	7494914907195671	metering_device_phase_determination.exe	b1054285d1ad9f4b

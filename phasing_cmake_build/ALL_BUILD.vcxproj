@@ -173,9 +173,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\phasing_cmake_build\phasing.vcxproj">
-      <Project>{3B0EFCD0-1098-3AD6-9690-9EAFD31A7753}</Project>
-      <Name>phasing</Name>
+    <ProjectReference Include="C:\Users\airat\source\repos\determination-of-the-phase-of-the-metering-device\phasing_cmake_build\determination_of_the_phase_of_the_metering_device.vcxproj">
+      <Project>{3D62EF5C-01EA-3C68-A7CB-8C83D3D99A79}</Project>
+      <Name>determination_of_the_phase_of_the_metering_device</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

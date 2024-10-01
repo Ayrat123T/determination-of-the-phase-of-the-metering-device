@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <filesystem>
-//#include <libpq-fe.h> /* libpq header file */ 
+#include <libpq-fe.h> /* libpq header file */ 
 
 #include "electricity_meter.h"
 #include "meters_data.h"
@@ -20,7 +20,7 @@ namespace detailMeterVoltageProfilesIO {
 namespace MeterVoltageProfilesIO { 
 
     //Сфазировать счётчики используя данные из PostgreSQL
-    /*template <typename MeterModel>
+    template <typename MeterModel>
     void PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo);
 
     //прочитать данные из PostgreSQL
@@ -28,7 +28,7 @@ namespace MeterVoltageProfilesIO {
     MeterPhaseDeterminate::VoltageData<MeterModel> ReadFromPostgreSQL(PGconn* conninfo);
 
     //напечатать данные из PostgreSQL
-    void PrintAttribDataFromPostgreSQL(int nFields, PGresult* res);*/
+    void PrintAttribDataFromPostgreSQL(int nFields, PGresult* res);
 
     //Сфазировать счётчики используя данные из CSV таблицы
     template <typename MeterModel>
@@ -40,7 +40,7 @@ namespace MeterVoltageProfilesIO {
 
 } //namespace MeterVoltageProfilesIO
 
-/*template <typename MeterModel>
+template <typename MeterModel>
 void MeterVoltageProfilesIO::PhasingDataFromPostgreSQL(int argc, char** argv, const char* conninfo) {
   
     PGconn* conn = PQconnectdb(conninfo); // Установить подключение к базе данных
@@ -66,17 +66,17 @@ void MeterVoltageProfilesIO::PhasingDataFromPostgreSQL(int argc, char** argv, co
 template <typename MeterModel>
 MeterPhaseDeterminate::VoltageData<MeterModel> MeterVoltageProfilesIO::ReadFromPostgreSQL(PGconn* conn) {
     MeterPhaseDeterminate::VoltageData<MeterModel> voltage_data;
-    //PGresult* res = PQexec(conn, "SELECT * from data WHERE timestamp < '2022-12-15'");
-    PGresult* res = PQexec(conn, "SELECT * from test"); // holds query result
-    /*int nFields = PQnfields(res);
-    PrintAttribDataFromPostgreSQL(nFields, res);*/
-    /*for (int i = 0; i < PQntuples(res); ++i) {
+    PGresult* res = PQexec(conn, "SELECT * from data WHERE timestamp < '2022-12-15'");
+    //PGresult* res = PQexec(conn, "SELECT * from test"); // holds query result
+    int nFields = PQnfields(res);
+    PrintAttribDataFromPostgreSQL(nFields, res);
+    for (int i = 0; i < PQntuples(res); ++i) {
         MeterModel meter(PQgetvalue(res, i, 0), PQgetvalue(res, i, 3));
         voltage_data.Insert(meter, PQgetvalue(res, i, 2));
     }
     std::cout << "Insert complited!" << std::endl;
     return voltage_data;
-}*/
+}
 
 /*void ExportPhasingResultToPostgreSQL(PGconn* conn) {
     const char* name = "name";
@@ -100,6 +100,9 @@ void MeterVoltageProfilesIO::PhasingDataFromCSV(std::ifstream& input) {
     std::ofstream outSlope; // поток для записи
     outSlope.open("PhasesToMeterToSlope.csv"); // открываем файл для записи
     voltage_data.PrintPhasesToMeterToSlope(outSlope);
+    std::ofstream outVoltage; // поток для записи
+    outVoltage.open("MeterToVoltage.csv"); // открываем файл для запис
+    voltage_data.PrintVoltage(outVoltage);
 }
 
 template <typename MeterModel>
